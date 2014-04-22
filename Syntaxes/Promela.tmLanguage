@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>pml</string>
+		<string>promela</string>
+	</array>
+	<key>name</key>
+	<string>Promela</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>begin</key>
+			<string>\/\*</string>
+			<key>comment</key>
+			<string>Block comment</string>
+			<key>end</key>
+			<string>\*\/</string>
+			<key>name</key>
+			<string>comment.block</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>flow control</string>
+			<key>match</key>
+			<string>\b(assert|else|fi|if|unless|xr|xs|do|od|break|skip)\b</string>
+			<key>name</key>
+			<string>keyword.control</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>operators</string>
+			<key>match</key>
+			<string>\b(run)\b</string>
+			<key>name</key>
+			<string>keyword.operator</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>label (as in goto)</string>
+			<key>match</key>
+			<string>\b[a-zA-Z]+(\s)*:</string>
+			<key>name</key>
+			<string>variable.other</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>built-in functions</string>
+			<key>match</key>
+			<string>\b(printf|len|empty|nempty|full|nfull|enabled|eval|pc_value)\b</string>
+			<key>name</key>
+			<string>entity.name.function</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>([a-zA-Z_])+\(</string>
+			<key>comment</key>
+			<string>Function calls</string>
+			<key>contentName</key>
+			<string>variable.parameter</string>
+			<key>end</key>
+			<string>\)</string>
+			<key>name</key>
+			<string>entity.name.function</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>string</string>
+			<key>match</key>
+			<string>"([^\\"]|\\.)*"</string>
+			<key>name</key>
+			<string>string.quoted.double</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>integer</string>
+			<key>match</key>
+			<string>\b([0-9])+\b</string>
+			<key>name</key>
+			<string>constant.numeric</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>true and false</string>
+			<key>match</key>
+			<string>\b(true|false|TRUE|FALSE)\b</string>
+			<key>name</key>
+			<string>constant.language</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>type</string>
+			<key>match</key>
+			<string>\b(bit|bool|byte|pid|chan|int|mtype|proctype|short|unsigned|Dproctype)\b</string>
+			<key>name</key>
+			<string>storage.type</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>modifiers</string>
+			<key>match</key>
+			<string>\b(hidden|init|inline|active|local|show)\b</string>
+			<key>name</key>
+			<string>storage.modifier</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>I don't know where to put these</string>
+			<key>match</key>
+			<string>\b(typedef|c_state)\b</string>
+			<key>name</key>
+			<string>storage.modifier</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.Promela</string>
+	<key>uuid</key>
+	<string>fa220c5d-0ad5-4a52-8027-37e13443b1fc</string>
+</dict>
+</plist>

@@ -1,0 +1,79 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: Promela
+scopeName: source.Promela
+fileTypes: [pml, promela]
+uuid: fa220c5d-0ad5-4a52-8027-37e13443b1fc
+
+patterns:
+# Comments
+- comment: Block comment
+  name: comment.block
+  begin: '\/\*'
+  end: '\*\/'
+
+# Flow Control
+- comment: flow control
+  name: keyword.control
+  match: '\b(assert|else|fi|if|unless|xr|xs|do|od|break|skip)\b'
+
+# Operators
+- comment: operators
+  name: keyword.operator
+  match: '\b(run)\b'
+
+- comment: label (as in goto)
+  name: variable.other
+  match: '\b[a-zA-Z]+(\s)*:'
+
+# Functions
+- comment: built-in functions
+  name: entity.name.function
+  match: '\b(printf|len|empty|nempty|full|nfull|enabled|eval|pc_value)\b'
+
+- comment: Function calls
+  name: entity.name.function
+  contentName: variable.parameter
+  begin: '([a-zA-Z_])+\('
+  end: '\)'
+
+# Constants
+- comment: string
+  name: string.quoted.double
+  match: '"([^\\"]|\\.)*"'
+
+- comment: integer
+  name: constant.numeric
+  match: '\b([0-9])+\b'
+
+- comment: true and false
+  name: constant.language
+  match: '\b(true|false|TRUE|FALSE)\b'
+
+# Types
+- comment: type
+  name: storage.type
+  match: '\b(bit|bool|byte|pid|chan|int|mtype|proctype|short|unsigned|Dproctype)\b'
+
+- comment: modifiers
+  name: storage.modifier
+  match: '\b(hidden|init|inline|active|local|show)\b'
+
+
+
+
+- comment: I don't know where to put these
+  name: storage.modifier
+  match: '\b(typedef|c_state)\b'
+
+
+# Invalids
+#- comment: Invalid characters
+#  name: invalid.illegal
+#  match: '(\\|`|\$|%|\?)'
+
+#- comment: Line comment
+#  name: comment.double-slash
+#  match: '\/\/.*$'
+
+...
