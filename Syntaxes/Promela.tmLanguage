@@ -38,6 +38,18 @@
 			<string>keyword.operator</string>
 		</dict>
 		<dict>
+			<key>begin</key>
+			<string>^(#)(\s)*(define)(\s)*</string>
+			<key>comment</key>
+			<string>defines</string>
+			<key>contentName</key>
+			<string>variable.parameter</string>
+			<key>end</key>
+			<string>$</string>
+			<key>name</key>
+			<string>keyword.operator</string>
+		</dict>
+		<dict>
 			<key>comment</key>
 			<string>label (as in goto)</string>
 			<key>match</key>
