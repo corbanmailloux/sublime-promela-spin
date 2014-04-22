@@ -2,9 +2,6 @@ sublime-promela-spin
 
 # Sublime Text 3 - Promela SPIN Syntax Highlighting and Build System
 
-Depends on having JSpin installed in the default location.
-
-The build system is the same as clicking "Random" in JSpin.
 
 ### Syntax highlighting for [Promela SPIN](http://spinroot.com/spin/whatispin.html) in [Sublime Text 3](http://www.sublimetext.com/3).
 
