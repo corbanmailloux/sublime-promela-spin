@@ -1,3 +1,6 @@
 {
-	"cmd": "C:\\jspin\\bin\\spin.exe -p -l -g -s -r -X \"$file\""
+
+	"cmd": "C:\\jspin\\bin\\spin.exe -g -l -p -r -s -X -u250 \"$file\"",
+
+	"selector": "source.Promela"
 }
