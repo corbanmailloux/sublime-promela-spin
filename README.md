@@ -1,5 +1,3 @@
-sublime-promela-spin
-
 # Sublime Text 3 - Promela SPIN Syntax Highlighting and Build System
 
 
