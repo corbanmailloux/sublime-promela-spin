@@ -1,7 +1,7 @@
-# Sublime Text 3 - Promela SPIN Syntax Highlighting and Build System
+# Sublime Text 3 - Promela Spin Syntax Highlighting and Build System
 
 
-### Syntax highlighting for [Promela SPIN](http://spinroot.com/spin/whatispin.html) in [Sublime Text 3](http://www.sublimetext.com/3).
+### Syntax highlighting for [Promela Spin](http://spinroot.com/spin/whatispin.html) in [Sublime Text 3](http://www.sublimetext.com/3).
 
 
 ## Getting Started
