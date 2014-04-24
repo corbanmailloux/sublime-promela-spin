@@ -1,6 +1,9 @@
 {
+	"file_regex": "^spin: (.*):([0-9]*), (.*)$",
+	"selector": "source.Promela",
 
-	"cmd": "C:\\jspin\\bin\\spin.exe -X -u250 \"$file\"",
-
-	"selector": "source.Promela"
+	"windows":
+    {
+        "cmd": "C:\\jspin\\bin\\spin.exe -X -u250 \"$file\"",
+    }
 }
