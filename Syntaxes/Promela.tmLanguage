@@ -25,7 +25,7 @@
 			<key>comment</key>
 			<string>flow control</string>
 			<key>match</key>
-			<string>\b(assert|else|fi|if|unless|xr|xs|do|od|break|skip)\b</string>
+			<string>\b(assert|else|fi|if|unless|xr|xs|do|od|break|skip|atomic)\b</string>
 			<key>name</key>
 			<string>keyword.control</string>
 		</dict>

@@ -15,7 +15,7 @@ patterns:
 # Flow Control
 - comment: flow control
   name: keyword.control
-  match: '\b(assert|else|fi|if|unless|xr|xs|do|od|break|skip)\b'
+  match: '\b(assert|else|fi|if|unless|xr|xs|do|od|break|skip|atomic)\b'
 
 # Operators
 - comment: operators
