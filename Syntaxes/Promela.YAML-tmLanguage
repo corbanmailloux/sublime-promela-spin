@@ -23,14 +23,16 @@ patterns:
   match: '\b(run)\b'
 
 - comment: defines
-  name: keyword.operator
-  contentName: variable.parameter
-  begin: '^(#)(\s)*(define)(\s)*'
-  end: '$'
+  #name: keyword.operator
+  match: '^(#)\s*(define)\s*([a-zA-Z_]+[0-9a-zA-Z_]*)'
+  captures:
+    #'1': {name: } C doesn't style the octothorp, so I won't.
+    '2': {name: keyword.operator}
+    '3': {name: entity.name.function}
 
 - comment: label (as in goto)
   name: variable.other
-  match: '\b[a-zA-Z]+(\s)*:'
+  match: '\b[a-zA-Z_]+[0-9a-zA-Z_]*(\s)*:'
 
 # Functions
 - comment: built-in functions
@@ -38,10 +40,12 @@ patterns:
   match: '\b(printf|len|empty|nempty|full|nfull|enabled|eval|pc_value)\b'
 
 - comment: Function calls
-  name: entity.name.function
-  contentName: variable.parameter
-  begin: '([a-zA-Z_])+\('
+  begin: '\b([a-zA-Z_]+[0-9a-zA-Z_]*)\('
+  beginCaptures:
+    '1': {name: entity.name.function}
   end: '\)'
+  patterns:
+  - include: $self
 
 # Constants
 - comment: string
@@ -73,11 +77,7 @@ patterns:
   match: '\b(typedef|c_state)\b'
 
 
-# Invalids
-#- comment: Invalid characters
-#  name: invalid.illegal
-#  match: '(\\|`|\$|%|\?)'
-
+# Strangely, this is not part of the spec for promela, but it is in C.
 #- comment: Line comment
 #  name: comment.double-slash
 #  match: '\/\/.*$'

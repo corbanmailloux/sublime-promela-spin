@@ -38,22 +38,29 @@
 			<string>keyword.operator</string>
 		</dict>
 		<dict>
-			<key>begin</key>
-			<string>^(#)(\s)*(define)(\s)*</string>
+			<key>captures</key>
+			<dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.operator</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function</string>
+				</dict>
+			</dict>
 			<key>comment</key>
 			<string>defines</string>
-			<key>contentName</key>
-			<string>variable.parameter</string>
-			<key>end</key>
-			<string>$</string>
-			<key>name</key>
-			<string>keyword.operator</string>
+			<key>match</key>
+			<string>^(#)\s*(define)\s*([a-zA-Z_]+[0-9a-zA-Z_]*)</string>
 		</dict>
 		<dict>
 			<key>comment</key>
 			<string>label (as in goto)</string>
 			<key>match</key>
-			<string>\b[a-zA-Z]+(\s)*:</string>
+			<string>\b[a-zA-Z_]+[0-9a-zA-Z_]*(\s)*:</string>
 			<key>name</key>
 			<string>variable.other</string>
 		</dict>
@@ -67,15 +74,26 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>([a-zA-Z_])+\(</string>
+			<string>\b([a-zA-Z_]+[0-9a-zA-Z_]*)\(</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function</string>
+				</dict>
+			</dict>
 			<key>comment</key>
 			<string>Function calls</string>
-			<key>contentName</key>
-			<string>variable.parameter</string>
 			<key>end</key>
 			<string>\)</string>
-			<key>name</key>
-			<string>entity.name.function</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>comment</key>
