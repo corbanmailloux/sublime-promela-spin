@@ -6,16 +6,20 @@ fileTypes: [pml, promela]
 uuid: fa220c5d-0ad5-4a52-8027-37e13443b1fc
 
 patterns:
+
+
 # Comments
 - comment: Block comment
   name: comment.block
   begin: '\/\*'
   end: '\*\/'
 
+
 # Flow Control
 - comment: flow control
   name: keyword.control
   match: '\b(assert|else|fi|if|unless|xr|xs|do|od|break|skip|atomic)\b'
+
 
 # Operators
 - comment: operators
@@ -34,18 +38,29 @@ patterns:
   name: variable.other
   match: '\b[a-zA-Z_]+[0-9a-zA-Z_]*(\s)*:'
 
+
 # Functions
 - comment: built-in functions
   name: entity.name.function
   match: '\b(printf|len|empty|nempty|full|nfull|enabled|eval|pc_value)\b'
 
-- comment: Function calls
+- comment: function calls
   begin: '\b([a-zA-Z_]+[0-9a-zA-Z_]*)\('
   beginCaptures:
     '1': {name: entity.name.function}
   end: '\)'
   patterns:
   - include: $self
+
+- comment: ltls
+  begin: '\b(ltl)(\s)+([a-zA-Z_]+[0-9a-zA-Z_]*)(\s)*{'
+  beginCaptures:
+    '1': {name: storage.type}
+    '3': {name: entity.name.function}
+  end: '}'
+  patterns:
+  - include: $self
+
 
 # Constants
 - comment: string
