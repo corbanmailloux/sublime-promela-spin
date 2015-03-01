@@ -1,6 +1,5 @@
 # Sublime Text 3 - Promela Spin Syntax Highlighting and Build System
 
-
 ### Syntax highlighting for [Promela Spin](http://spinroot.com/spin/whatispin.html) in [Sublime Text 3](http://www.sublimetext.com/3).
 
 
@@ -49,4 +48,3 @@ To run the build, press <kbd>Ctrl</kbd>+<kbd>B</kbd> or select "Build" from the 
 Copyright 2014 Corban Mailloux
 
 [MIT License](LICENSE-MIT)
-
