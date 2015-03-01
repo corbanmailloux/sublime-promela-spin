@@ -21,7 +21,7 @@ git clone https://github.com/corbanmailloux/sublime-promela-spin.git "sublime-pr
 of the following methods:
 
 * Select from the list of supported languages in your status bar at the bottom right corner of your editor
-* `ctrl + shift + p` and search for "Promela"
+* <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> and search for "Promela"
 
 ### 3. Make "Promela" the default
 To make `Promela` the default highlighting for the current extension:
@@ -32,7 +32,7 @@ To make `Promela` the default highlighting for the current extension:
 ### 3. Test the Build System
 The "Promela - Random" build system should be automatically selected when a Promela file is open. 
 
-To run the build, press `ctrl + b` or select "Build" from the "Tools" menu.
+To run the build, press <kbd>Ctrl</kbd>+<kbd>B</kbd> or select "Build" from the "Tools" menu.
 
 
 
