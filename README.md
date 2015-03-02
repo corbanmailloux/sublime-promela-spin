@@ -7,7 +7,7 @@
 
 ### 1. Installation
 
-While the syntax highlighting should work on any OS with no dependencies, the build system is Windows only, and requires that [jSpin](https://code.google.com/p/jspin/) is installed in the default directory of `C:\jspin\`.
+While the syntax highlighting should work on any OS with no dependencies, the build system is Windows only, and requires that [jSpin](https://code.google.com/p/jspin/)'s `bin` directory (default: `C:\jspin\bin`) be added to the PATH variable.
 
 Go to `Preferences -> Browse Packages`, and then either download and unzip this plugin into that directory, or:
 
