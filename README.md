@@ -9,7 +9,7 @@
 
 1. Open Sublime Text's Command Palette (default: <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>)
 2. Type `install` and select `Package Control: Install Package`
-3. Type `promela spin` and select "Promela_Spin" to install to package.
+3. Type `promela spin` and select "Promela_Spin" to install the package.
 
 ## Manual Installation
 
