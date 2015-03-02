@@ -1,9 +1,10 @@
 {
-	"file_regex": "^spin: (.*):([0-9]*), (.*)$",
-	"selector": "source.Promela",
+    "file_regex": "^spin: (.*):([0-9]*), (.*)$",
+    "selector": "source.promela",
 
-	"windows":
+    "windows":
     {
-        "cmd": "C:\\jspin\\bin\\spin.exe -X -u250 \"$file\""
+        "cmd": ["spin.exe", "-X",  "-u250",  "$file"],
+        "path": "$path;C:\\jspin\\bin"
     }
 }
