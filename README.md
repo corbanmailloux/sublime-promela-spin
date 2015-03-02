@@ -11,7 +11,7 @@
 2. Type `install` and select `Package Control: Install Package`
 3. Type `promela spin` and select "Promela_Spin" to install to package.
 
-## Manual Install
+## Manual Installation
 
 ### 1. Installation
 
