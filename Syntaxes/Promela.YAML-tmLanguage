@@ -1,7 +1,7 @@
 # [PackageDev] target_format: plist, ext: tmLanguage
 ---
 name: Promela
-scopeName: source.Promela
+scopeName: source.promela
 fileTypes: [pml, promela]
 uuid: fa220c5d-0ad5-4a52-8027-37e13443b1fc
 

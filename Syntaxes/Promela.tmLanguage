@@ -173,7 +173,7 @@
 		</dict>
 	</array>
 	<key>scopeName</key>
-	<string>source.Promela</string>
+	<string>source.promela</string>
 	<key>uuid</key>
 	<string>fa220c5d-0ad5-4a52-8027-37e13443b1fc</string>
 </dict>
