@@ -93,8 +93,8 @@ patterns:
 
 
 # Strangely, this is not part of the spec for promela, but it is in C.
-#- comment: Line comment
-#  name: comment.double-slash
-#  match: '\/\/.*$'
+- comment: Line comment
+  name: comment.double-slash
+  match: '\/\/.*$'
 
 ...
