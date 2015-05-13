@@ -92,7 +92,7 @@ patterns:
   match: '\b(typedef|c_state)\b'
 
 
-# Strangely, this is not part of the spec for promela, but it is in C.
+# This is not strictly apart of the promela or C spec, but everyone does it.
 - comment: Line comment
   name: comment.double-slash
   match: '\/\/.*$'
