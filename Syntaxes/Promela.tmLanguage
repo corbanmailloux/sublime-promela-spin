@@ -171,6 +171,14 @@
 			<key>name</key>
 			<string>storage.modifier</string>
 		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Line comment</string>
+			<key>match</key>
+			<string>\/\/.*$</string>
+			<key>name</key>
+			<string>comment.double-slash</string>
+		</dict>
 	</array>
 	<key>scopeName</key>
 	<string>source.promela</string>
