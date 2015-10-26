@@ -5,19 +5,17 @@
 
 ## Getting Started
 
-### (Recommended Method) Install the package using [Sublime Text Package Control](https://packagecontrol.io/).
+**Note:** While the syntax highlighting should work on any OS with no dependencies, the build system is Windows only, and requires that [jSpin](https://code.google.com/p/jspin/)'s `bin` directory (default: `C:\jspin\bin`) be added to the PATH variable.
 
-While the syntax highlighting should work on any OS with no dependencies, the build system is Windows only, and requires that [jSpin](https://code.google.com/p/jspin/)'s `bin` directory (default: `C:\jspin\bin`) be added to the PATH variable.
+### 1. Installation
+
+#### (Recommended) Automatic Installation using [Sublime Text Package Control](https://packagecontrol.io/)
 
 1. Open Sublime Text's Command Palette (default: <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>)
 2. Type `install` and select `Package Control: Install Package`
 3. Type `promela spin` and select "Promela_Spin" to install the package.
 
-## Manual Installation
-
-### 1. Installation
-
-While the syntax highlighting should work on any OS with no dependencies, the build system is Windows only, and requires that [jSpin](https://code.google.com/p/jspin/)'s `bin` directory (default: `C:\jspin\bin`) be added to the PATH variable.
+#### Manual Installation
 
 Go to `Preferences -> Browse Packages`, and then either download and unzip this plugin into that directory, or:
 
