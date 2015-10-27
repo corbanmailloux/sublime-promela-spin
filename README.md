@@ -49,7 +49,7 @@ To run the build, press <kbd>Ctrl</kbd>+<kbd>B</kbd> or select "Build" from the 
 
 + [http://corb.co](http://corb.co)
 + [http://twitter.com/corbco](http://twitter.com/corbco)
-+ [http://github.com/corbanmailloux](http://github.com/corbco)
++ [http://github.com/corbanmailloux](https://github.com/corbanmailloux)
 
 
 ## Copyright and License
